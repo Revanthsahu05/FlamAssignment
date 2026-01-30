@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div id="ui-layer">
+        <div class="toolbar">
+            <h1>Collaborative Canvas</h1>
+            <div class="status" id="status">Connecting...</div>
+            <button id="undo-btn">Undo My Last Stroke</button>
+            <button id="clear-btn" style="background-color: #d9534f;">Clear Board</button>
+            <div id="active-users">Users: 0</div>
+        </div>
+    </div>
+    <canvas id="drawing-board"></canvas>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
